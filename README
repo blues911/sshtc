@@ -1,0 +1,51 @@
+sshtc
+
+DESCRIPTION
+
+SSH client.
+Executes SSH connection in Linux terminal.
+
+Connection modes:
+1. password (by default)
+2. public key
+
+Note: sshtc uses sshpass to handle ssh password request. This is not safe for a
+multi users mode, so use it on your own risk! My purpose was to build simple ssh
+client and run away from PuTTY.
+
+DEPENDENCIES
+
+python
+openssh-server
+sshpass
+
+INSTALL
+
+git clone https://github.com/smokehill/sshtc.git
+cd sshtc/
+make install
+sshtc
+
+SETTINGS
+
+After installation add connection params into ~/.config/sshtc/data.json
+
+Example:
+[
+    {
+        "name": "ubuntu-vbox1.local",
+        "port": "22",
+        "host": "192.168.10.101",
+        "user": "root",
+        "password": "password",
+        "public_key": ""
+    },
+    {
+        "name": "ubuntu-vbox2.local",
+        "port": "22",
+        "host": "192.168.10.102",
+        "user": "root",
+        "password": "",
+        "public_key": "~/.ssh/ubuntu_vbox2_rsa"
+    }
+]
