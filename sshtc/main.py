@@ -29,7 +29,10 @@ def main():
 
     i = 1
     for param in params:
-        print("%s %s" % (i, param['name']))
+        tpl = "%s %s"
+        if i < 10 and len(params) >= 10:
+            tpl = " %s %s"
+        print(tpl % (i, param['name']))
         i = i + 1
 
     try:
