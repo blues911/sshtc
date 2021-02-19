@@ -35,7 +35,7 @@ Example:
     {
         "name": "ubuntu-vbox1.local",
         "port": "22",
-        "host": "192.168.10.101",
+        "host": "192.168.56.101",
         "user": "root",
         "password": "password",
         "public_key": ""
@@ -43,7 +43,7 @@ Example:
     {
         "name": "ubuntu-vbox2.local",
         "port": "22",
-        "host": "192.168.10.102",
+        "host": "192.168.56.102",
         "user": "root",
         "password": "",
         "public_key": "~/.ssh/ubuntu_vbox2_rsa"
