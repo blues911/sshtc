@@ -5,9 +5,14 @@ if [ ! -d /usr/local/sshtc ]; then
     exit 0
 fi
 
+if [[ "$(whoami)" != "root" ]]; then
+    echo "Error: permission denied (run this script as root)"
+    exit 1
+fi
+
 echo "Uninstalling..."
 # uninstall sshtc
-sudo rm -f /usr/local/bin/sshtc
-sudo rm -rf /usr/local/sshtc
-sudo rm -rf ~/.config/sshtc
+rm -f /usr/local/bin/sshtc
+rm -rf /usr/local/sshtc
+rm -rf ~/.config/sshtc
 echo "Ok"
