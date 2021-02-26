@@ -7,7 +7,6 @@ import signal
 import subprocess
 
 
-# traceback Ctrl-C
 signal.signal(signal.SIGINT, lambda x,y: sys.exit(0))
 
 def main():
