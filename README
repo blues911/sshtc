@@ -23,8 +23,7 @@ INSTALL
 
 git clone https://github.com/smokehill/sshtc.git
 cd sshtc/
-sudo ./sh/install.sh
-sshtc
+pip install .
 
 SETTINGS
 

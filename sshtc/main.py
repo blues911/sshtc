@@ -7,6 +7,19 @@ import signal
 import subprocess
 
 
+# create config dir
+config_dir = os.path.expanduser('~') + '/.config/sshtc'
+if not os.path.isdir(config_dir):
+    try:
+        os.makedirs(config_dir)
+    except OSError:
+        raise OSError(2, config_dir + ' not exists')
+    # create config file
+    f = open(config_dir + '/data.json', 'w')
+    f.write("[]")
+    f.close()
+
+# traceback Ctrl+C
 signal.signal(signal.SIGINT, lambda x,y: sys.exit(0))
 
 def main():
@@ -66,7 +79,3 @@ def main():
             host=srv['host']
         )
         subprocess.call(args, shell=True)
-
-
-if __name__ == '__main__':
-    main()
