@@ -15,7 +15,6 @@ client and run away from PuTTY.
 
 DEPENDENCIES
 
-python
 openssh-server
 sshpass
 
