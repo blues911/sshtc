@@ -1,16 +1,15 @@
-sshtc
+SSHTC 0.1
 
 DESCRIPTION
 
-Tiny SSH client.
-Executes SSH connection in Linux terminal.
+Tiny SSH client in Linux terminal.
 
 Connection modes:
 1. password (by default)
 2. public key
 
-Note: sshtc uses sshpass to handle ssh password request. This is not safe for a
-multi users mode, so use it on your own risk! My purpose was to build simple ssh
+Note: SSHTC uses SSHPass to handle SSH password request. This is not safe for a
+multi users mode, so use it on your own risk! My purpose was to build simple SSH
 client and run away from PuTTY.
 
 DEPENDENCIES
@@ -26,7 +25,7 @@ pip install .
 
 SETTINGS
 
-After installation add connection params into ~/.config/sshtc/data.json
+Fill ~/.config/sshtc/data.json with your connection params.
 
 Example:
 [
