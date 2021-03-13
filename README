@@ -2,7 +2,7 @@ sshtc
 
 DESCRIPTION
 
-SSH client.
+Tiny SSH client.
 Executes SSH connection in Linux terminal.
 
 Connection modes:

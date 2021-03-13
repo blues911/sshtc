@@ -8,7 +8,7 @@ def readme():
 setup(
     name='sshtc',
     version='0.1',
-    description='SSH client',
+    description='Tiny SSH client',
     long_description=readme(),
     url='https://github.com/smokehill/sshtc',
     author='Valera Padolochniy',
