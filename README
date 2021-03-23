@@ -19,7 +19,7 @@ sshpass
 
 INSTALL
 
-git clone https://github.com/smokehill/sshtc.git
+git clone https://github.com/blues911/sshtc.git
 cd sshtc/
 pip install .
 
