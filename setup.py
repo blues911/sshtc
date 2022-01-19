@@ -21,6 +21,7 @@ setup(
     classifiers=[
         'Environment :: Console',
         'License :: OSI Approved :: MIT',
-        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
     ],
+    python_requires='>=3.8',
 )

@@ -46,7 +46,7 @@ def main():
         i = i + 1
 
     try:
-        val = int(raw_input('>>> '))
+        val = int(input('>>> '))
         print("")
         if val is None or int(val) <= 0 or int(val) > len(params):
             print("Bad argument!")
@@ -63,7 +63,7 @@ def main():
         args = "ssh -o {known_host} -o {log_level} -i {public_key} -p {port} {user}@{host}".format(
             known_host='StrictHostKeyChecking=no',
             log_level='LogLevel=ERROR',
-            key=srv['public_key'],
+            public_key=srv['public_key'],
             port=srv['port'],
             user=srv['user'],
             host=srv['host']
